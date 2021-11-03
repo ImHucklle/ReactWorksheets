@@ -4,17 +4,17 @@ import DisplayName from './DisplayName/DisplayName';
 
 class App extends Component {
     constructor(props){
-        super(props)
-        this.name = [
-            {firstName: "Myles"}, 
-            {lastName: "Lister"}
-        ];
+        super(props);
+        this.state = {
+            firstName: "Myles", 
+            lastName: "Lister"
+        };
     }
 
     render (){
         return(
             <div>
-                <h1><DisplayName /></h1>
+                <DisplayName firstName={this.state.firstName} lastName={this.state.lastName} />
             </div>
         );
     }
