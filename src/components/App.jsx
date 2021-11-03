@@ -1,13 +1,15 @@
 import React, { Component } from 'react';
 import './App.css'
 import DisplayName from './DisplayName/DisplayName';
+import NameList from './NameList/NameList';
 
 class App extends Component {
     constructor(props){
         super(props);
         this.state = {
             firstName: "Myles", 
-            lastName: "Lister"
+            lastName: "Lister",
+            names: ['Baker', 'Nick', 'Jarvis', 'Myles'],
         };
     }
 
@@ -15,6 +17,7 @@ class App extends Component {
         return(
             <div>
                 <DisplayName firstName={this.state.firstName} lastName={this.state.lastName} />
+                <NameList listName={this.state.names} />
             </div>
         );
     }
