@@ -4,6 +4,7 @@ import DisplayName from './DisplayName/DisplayName';
 import NameList from './NameList/NameList';
 import AlertUser from './AlertUser/AlertUser';
 import Table from './Superhero/Table';
+import Create from './Superhero/Create'
 
 class App extends Component {
     constructor(props){
@@ -29,6 +30,7 @@ class App extends Component {
                 <AlertUser button/>
                 <br />
                 <Table />
+                <Create onSubmit={this.state.superhero}/>
             </div>
         );
     }

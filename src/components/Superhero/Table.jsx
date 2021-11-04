@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Create from './Create';
 
 class Table extends Component{
     constructor(props){
@@ -24,7 +23,6 @@ class Table extends Component{
                         <td>{this.state.superheroes[1]}</td>
                     </tr>
                 </table>
-                <Create />
             </div>
         )
     }
