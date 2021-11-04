@@ -17,7 +17,7 @@ class App extends Component {
         return(
             <div>
                 <DisplayName firstName={this.state.firstName} lastName={this.state.lastName} />
-                <NameList listName={this.state.names} />
+                <NameList listNames={this.state.names} />
             </div>
         );
     }
